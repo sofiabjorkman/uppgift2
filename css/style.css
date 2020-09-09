@@ -1,0 +1,151 @@
+body {
+	background: url(../img/12_col.gif) center top repeat-y;
+	background-size: 90%;
+	
+}
+.container {
+	display: grid;
+	height: 100vh;
+	width: 89%;
+	margin: 0 auto;
+	margin-bottom: 1.4rem;
+	grid-template-columns: repeat (12, 1fr);
+	grid-template-rows: auto;
+	grid-gap: 1.6rem;
+	grid-template-areas: 
+	"box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1"
+	"box2 box2 box3 box3 box3 box3 box3 box3 box3 box3 box4 box4"
+	"box5 box5 box5 box5 box5 box5 box5 box5 box5 box6 box6 box6"
+	;
+}
+
+.container2 {
+	display: grid;
+	height: 30vh;
+	width: 87%;
+	margin: 0 auto;
+	border: 1px solid black;
+	padding: 10px;
+	grid-template-columns: repeat (12, 1fr);
+	grid-template-rows: auto;
+	grid-gap: 1.6rem;
+	grid-template-areas: 
+	"box7 box7 box7 box8 box8 box8 box9 box9 box9 box10 box10 box10"
+	;
+}
+
+.box1 {
+	border: 1px solid black;
+	grid-area: box1;
+	
+}
+.box2 {
+	border: 1px solid black;
+	grid-area: box2;
+}
+.box3 {
+	border: 1px solid black;
+	grid-area: box3;
+	
+}
+.box4 {
+	border: 1px solid black;
+	grid-area: box4;
+}
+.box5 {
+	border: 1px solid black;
+	grid-area: box5;
+}
+.box6 {
+	border: 1px solid black;
+	grid-area: box6;
+}
+.box7 {
+	border: 1px solid black;
+	grid-area: box7;
+}
+.box8 {
+	border: 1px solid black;
+	grid-area: box8;
+}
+.box9 {
+	border: 1px solid black;
+	grid-area: box9;
+}
+.box10 {
+	border: 1px solid black;
+	grid-area: box10;
+}
+
+@media screen and (max-width: 1200px) {
+	.container {
+		grid-gap: 1.2rem;
+		margin-bottom: -9.4rem;
+		width: 89.5%;
+		grid-template-areas: 
+		"box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1"
+		"box2 box2 box2 box3 box3 box3 box3 box3 box3 box4 box4 box4"
+		"box5 box5 box5 box5 box5 box5 box5 box5 box6 box6 box6 box6"
+		;
+	}
+	.container2 {
+		margin-top: 10.4rem;
+		grid-template-areas: 
+		"box7 box7 box7 box8 box8 box8 box9 box9 box9 box10 box10 box10"
+		;
+	}
+}
+
+@media screen and (max-width: 960px) {
+.container {
+	grid-gap: 1rem;
+	margin-bottom: -9.4rem;
+	grid-template-areas: 
+	"box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1"
+	"box2 box2 box2 box2 box3 box3 box3 box3 box4 box4 box4 box4"
+	"box5 box5 box5 box5 box5 box5 box6 box6 box6 box6 box6 box6"
+	;
+	}
+	.container2 {
+		margin-top: 10.4rem;
+		grid-gap: 1rem;
+		grid-template-areas: 
+		"box7 box7 box7 box7 box7 box7 box8 box8 box8 box8 box8 box8"
+	    "box9 box9 box9 box9 box9 box9 box10 box10 box10 box10 box10 box10"
+		
+		;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.container {
+		grid-gap: 0.9rem;
+		margin-bottom: -9.4rem;
+	    grid-template-areas: 
+		"box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1"
+		"box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2 box2"
+		"box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3 box3"
+		"box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4 box4"
+		"box5 box5 box5 box5 box5 box5 box5 box5 box5 box5 box5 box5"
+		"box6 box6 box6 box6 box6 box6 box6 box6 box6 box6 box6 box6"
+
+		;
+	}
+	.container2 {
+		margin-top: 10.4rem;
+		grid-gap: 0.2rem;
+		grid-template-areas: 
+		"box7 box7 box7 box7 box7 box7 box7 box7 box7 box7 box7 box7"
+		"box8 box8 box8 box8 box8 box8 box8 box8 box8 box8 box8 box8"
+		"box9 box9 box9 box9 box9 box9 box9 box9 box9 box9 box9 box9"
+		"box10 box10 box10 box10 box10 box10 box10 box10 box10 box10 box10 box10"
+		
+		;
+	}
+	.box7,
+	.box8,
+	.box9,
+	.box10 {
+		height: 85%;
+	}
+}
